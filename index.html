@@ -5,14 +5,16 @@
   <title>AF Company Travel</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    /* Estilos gerais */
     body {
       font-family: 'Montserrat', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f0f8ff;
+      background-color: #f0f8ff; /* azul clarinho */
       color: #333;
     }
 
+    /* Cabeçalho */
     header {
       background-color: #0077b6;
       color: white;
@@ -30,10 +32,13 @@
       margin-top: 10px;
     }
 
+    /* Menu de navegação */
     nav {
       display: flex;
       justify-content: center;
+      gap: 15px;
       margin: 20px 0;
+      flex-wrap: wrap;
     }
 
     nav a {
@@ -41,7 +46,6 @@
       color: #0077b6;
       border: 2px solid #0077b6;
       padding: 10px 20px;
-      margin: 0 10px;
       border-radius: 5px;
       font-weight: bold;
       transition: 0.3s;
@@ -52,6 +56,7 @@
       color: white;
     }
 
+    /* Seções */
     section {
       padding: 40px 20px;
       text-align: center;
@@ -63,6 +68,7 @@
       margin-bottom: 20px;
     }
 
+    /* Cards de pacotes */
     .cards {
       display: flex;
       flex-wrap: wrap;
@@ -90,3 +96,96 @@
     }
 
     .card p {
+      margin: 0 15px 15px;
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    .card button {
+      background-color: #0077b6;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .card button:hover {
+      background-color: #023e8a;
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #0077b6;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    /* Responsivo */
+    @media (max-width: 600px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>AF Company Travel</h1>
+  <p>Viagens nacionais e internacionais com confiança</p>
+</header>
+
+<nav>
+  <a href="#sobre">Sobre Nós</a>
+  <a href="#servicos">Serviços</a>
+  <a href="#contato">Contato</a>
+</nav>
+
+<section id="sobre">
+  <h2>Sobre Nós</h2>
+  <p>A AF Company Travel é uma agência dedicada a oferecer experiências seguras, confortáveis e inesquecíveis.</p>
+</section>
+
+<section id="servicos">
+  <h2>Nossos Pacotes</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80" alt="Praia">
+      <h3>Praias Paradisíacas</h3>
+      <p>Desfrute de praias incríveis em destinos tropicais com conforto e segurança.</p>
+      <button>Reservar Agora</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Cidade">
+      <h3>Viagens Urbanas</h3>
+      <p>Explore grandes cidades e descubra cultura, gastronomia e diversão.</p>
+      <button>Reservar Agora</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=400&q=80" alt="Montanhas">
+      <h3>Aventura e Natureza</h3>
+      <p>Pacotes para trilhas, montanhas e experiências outdoor inesquecíveis.</p>
+      <button>Reservar Agora</button>
+    </div>
+  </div>
+</section>
+
+<section id="contato">
+  <h2>Contato</h2>
+  <p>Email: contato@afcompanytravel.com</p>
+  <p>WhatsApp: +244 XXX XXX XXX</p>
+</section>
+
+<footer>
+  &copy; 2026 AF Company Travel - Todos os direitos reservados
+</footer>
+
+</body>
+</html>
